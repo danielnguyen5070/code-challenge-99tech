@@ -145,18 +145,9 @@ export const getPriority = (blockchain: string): number => {
     default: return -99;
   }
 };
-```
+
 
 // WalletPage.tsx
-
-```tsx
-import React, { useMemo } from "react";
-import { getPriority } from "@/utils/getPriority";
-import type { BoxProps } from "@mui/material"; // Or your design system
-import { useWalletBalances } from "@/hooks/useWalletBalances";
-import { usePrices } from "@/hooks/usePrices";
-import WalletRow from "@/components/WalletRow";
-import classes from "./WalletPage.module.css"; // Assuming you use CSS modules
 
 interface WalletBalance {
   currency: string;
